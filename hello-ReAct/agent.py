@@ -94,9 +94,9 @@ class ReActAgent:
     def get_api_key() -> str:
         """Load the API key from an environment variable."""
         load_dotenv()
-        api_key = os.getenv("DEEPSEEK_API_KEY")
+        api_key = os.getenv("CHAT_API_KEY")
         if not api_key:
-            raise ValueError("未找到 DEEPSEEK_API_KEY 环境变量，请在 .env 文件中设置。")
+            raise ValueError("未找到 CHAT_API_KEY 环境变量，请在 .env 文件中设置。")
         return api_key
 
     def call_model(self, messages):

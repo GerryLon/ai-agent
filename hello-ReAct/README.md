@@ -10,7 +10,7 @@ uv sync
 然后在当前目录下，新建一个叫做 .env 的文件，输入以下内容：
 
 ```
-DEEPSEEK_API_KEY=xxx
+CHAT_API_KEY=xxx
 ```
 
 xxx 就是你在 DeepSeek 上配好的 API Key。如果你不用 DeepSeek，那直接改下代码，换个别的 baseUrl 就行了。
